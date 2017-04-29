@@ -1,0 +1,16 @@
+<!doctype html>
+<html ng-app="demo">
+<link rel="stylesheet" href="myStyle.css">
+<head>
+<title>Users Demo AngularJS</title>
+<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.3/angular.min.js"></script>
+<script src="usersDemo.js"></script>
+</head>
+<body>
+	<div ng-controller="Users">
+		<ul>
+			<li ng-repeat="user in users">{{ user.username }}</li>
+		</ul>
+	</div>
+</body>
+</html>
